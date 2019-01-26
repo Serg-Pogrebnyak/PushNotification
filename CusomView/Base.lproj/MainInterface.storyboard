@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="CusomView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jYb-Ak-ny0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEN-3W-Moz">
+                                <rect key="frame" x="139" y="30" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45882353186607361" green="0.74901962280273438" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jYb-Ak-ny0" firstAttribute="top" secondItem="2BE-c3-nQJ" secondAttribute="top" id="5zW-D2-U76"/>
+                            <constraint firstItem="jYb-Ak-ny0" firstAttribute="trailing" secondItem="2BE-c3-nQJ" secondAttribute="trailing" id="K5P-GN-M1q"/>
+                            <constraint firstItem="UEN-3W-Moz" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="SoN-V5-beQ"/>
+                            <constraint firstItem="UEN-3W-Moz" firstAttribute="top" secondItem="2BE-c3-nQJ" secondAttribute="top" constant="30" id="h04-Qk-hRR"/>
+                            <constraint firstItem="jYb-Ak-ny0" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="obr-E4-YCV"/>
+                            <constraint firstItem="jYb-Ak-ny0" firstAttribute="bottom" secondItem="2BE-c3-nQJ" secondAttribute="bottom" id="tsi-oN-nbT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="300"/>
+                    <connections>
+                        <outlet property="myMap" destination="jYb-Ak-ny0" id="z7G-aG-9hH"/>
+                        <outlet property="textForUser" destination="UEN-3W-Moz" id="8Sb-41-7YA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.40000000000001" y="126.83658170914543"/>
+        </scene>
+    </scenes>
+</document>

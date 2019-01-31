@@ -13,7 +13,8 @@ import MapKit
 
 class NotificationViewController: UIViewController, UNNotificationContentExtension {
 
-
+    //json for send this push
+    //{"aps":{"alert":"Testing.. (20)","badge":0,"sound":"default", "category":"ShowMapR","mutable-content" :1}, "latitude": 50.008210, "longitude": 36.239346, "radius": 100, "textForUser": "Hello from brama)"}
     @IBOutlet weak var myMap: MKMapView!
     @IBOutlet weak var textForUser: UILabel!
     
